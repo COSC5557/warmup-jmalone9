@@ -17,7 +17,7 @@ x = wine.drop(wine.columns[11], axis = 1)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2) #changing the test size doesnt seem to impact results much
 
 
-#create linear regression objext
+#create linear regression object
 regr = linear_model.LinearRegression()
 #train the model
 regr.fit(x_train, y_train)
